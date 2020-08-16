@@ -1,9 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
 
-export class Funds extends Component {
-  render() {
-    return <div> Hello from Funds`</div>;
+function Funds(props) {
+  if (props.fundsDAta) {
+    console.log(props.fundsDAta[2].title);
+    var title = props.fundsDAta[2].title;
+    var number = props.fundsDAta[2].number;
   }
+  return (
+    <div className="container">
+      <div className="numbers numFunds">{number}K</div>
+      <div>{title}</div>
+    </div>
+  );
 }
 
 export default Funds;
