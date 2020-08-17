@@ -30,8 +30,8 @@ export class App extends Component {
       return (
         <section>
           <div className="homeTiltle">
-            <span className="titlechild1">{title}</span>
-            <span style={{ color: "red" }} className="titlechild2">
+            <span className="homeTiltle__title1">{title}</span>
+            <span style={{ color: "red" }} className="homeTiltle__title2">
               {" "}
               {}
               {title_colored}

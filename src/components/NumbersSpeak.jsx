@@ -7,7 +7,10 @@ function NumbersSpeak(props) {
   const items = data.map((item) => {
     return (
       <div key={item.id} className="container">
-        <span className="numbers " style={{ color: item.number_color }}>
+        <span
+          className="container__numbers "
+          style={{ color: item.number_color }}
+        >
           {item.number}
         </span>
         <h1 className="title">{item.title}</h1>
@@ -16,7 +19,7 @@ function NumbersSpeak(props) {
   });
   return (
     <section className="parentsection">
-      <div className="parent">{items}</div>
+      <div className="parentsection__divs">{items}</div>
     </section>
   );
 }
