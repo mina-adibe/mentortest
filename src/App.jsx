@@ -30,7 +30,12 @@ export class App extends Component {
       return (
         <section>
           <div className="homeTiltle">
-            {title} <span style={{ color: "red" }}>{title_colored}</span>
+            <span className="titlechild1">{title}</span>
+            <span style={{ color: "red" }} className="titlechild2">
+              {" "}
+              {}
+              {title_colored}
+            </span>
           </div>
           <div>
             <NumbersSpeak allData={xdata} />

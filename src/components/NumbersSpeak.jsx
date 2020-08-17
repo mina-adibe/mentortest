@@ -6,17 +6,17 @@ function NumbersSpeak(props) {
 
   const items = data.map((item) => {
     return (
-      <div key={item.id}>
-        <div className="numbers " style={{ color: item.number_color }}>
+      <div key={item.id} className="container">
+        <span className="numbers " style={{ color: item.number_color }}>
           {item.number}
-        </div>
-        <div>{item.title}</div>
+        </span>
+        <h1 className="title">{item.title}</h1>
       </div>
     );
   });
   return (
-    <section className="parent">
-      <div className="container">{items}</div>
+    <section className="parentsection">
+      <div className="parent">{items}</div>
     </section>
   );
 }
