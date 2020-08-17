@@ -1,24 +1,24 @@
-import React, { Component } from "react";
+import React from "react";
 
-export class NumbersSpeak extends Component {
-  render() {
-    let data = this.props.number;
+function NumbersSpeak(props) {
+  let data = props.allData;
+  console.log(data);
 
-    const items = data.map((item) => {
-      return (
-        <div key={item.id}>
-          <div className="numbers">{item.number}</div>
-          <div className="title">{item.title}</div>
-        </div>
-      );
-    });
+  const items = data.map((item) => {
     return (
-      <React.Fragment>
-        <div>numbers speaker</div>
-        <div className="container">{items}</div>
-      </React.Fragment>
+      <div key={item.id}>
+        <div className="numbers " style={{ color: item.number_color }}>
+          {item.number}
+        </div>
+        <div>{item.title}</div>
+      </div>
     );
-  }
+  });
+  return (
+    <section className="parent">
+      <div className="container">{items}</div>
+    </section>
+  );
 }
 
 export default NumbersSpeak;

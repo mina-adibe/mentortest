@@ -1,20 +1,18 @@
 import React, { Component } from "react";
 import "./App.css";
-import Donation from "./components/Donation";
-import Volunteers from "./components/Volunteers";
-import Funds from "./components/Funds";
 import axios from "axios";
+import NumbersSpeak from "./components/NumbersSpeak";
 
 export class App extends Component {
   state = {
     data: "",
-    isLoading: false,
+    isLoading: true,
   };
 
   componentDidMount() {
     this.setState({ isLoading: true });
     axios
-      .get(`https://run.mocky.io/v3/86c34ad2-5635-4d0f-b5d7-eab4e857ce7c`)
+      .get(`https://run.mocky.io/v3/83b0bf2a-be40-4ffc-9d27-4aeaade24900`)
       .then((res) => {
         let data = res.data;
         this.setState({ data, isLoading: false });
@@ -26,19 +24,22 @@ export class App extends Component {
     if (isLoading) {
       return <p>Loading ...</p>;
     }
-    const { id, title, ...numbersdata } = this.state.data;
+    const { id, title, title_colored, ...numbersdata } = this.state.data;
     let xdata = numbersdata.speaking_numbers;
-
-    return (
-      <React.Fragment>
-        <div className="homeTiltle">{title}</div>
-        <div className="parent">
-          <Donation donationData={xdata} />
-          <Volunteers volunteersDAta={xdata} />
-          <Funds fundsDAta={xdata} />
-        </div>
-      </React.Fragment>
-    );
+    if (this.state.data) {
+      return (
+        <section>
+          <div className="homeTiltle">
+            {title} <span style={{ color: "red" }}>{title_colored}</span>
+          </div>
+          <div>
+            <NumbersSpeak allData={xdata} />
+          </div>
+        </section>
+      );
+    } else {
+      return "generic error";
+    }
   }
 }
 
