@@ -32,7 +32,11 @@ export class App extends Component {
           <h1 className="homeTiltle">
             <span className="homeTiltle__title1">{title} </span>
             <span
-              style={{ color: "red", textDecoration: "underline" }}
+              style={{
+                color: "#d55342",
+                textDecoration: "underline",
+                fontWeight: "lighter	",
+              }}
               className="homeTiltle__title2"
             >
               {title_colored}
