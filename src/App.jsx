@@ -29,14 +29,15 @@ export class App extends Component {
     if (this.state.data) {
       return (
         <section>
-          <div className="homeTiltle">
-            <span className="homeTiltle__title1">{title}</span>
-            <span style={{ color: "red" }} className="homeTiltle__title2">
-              {" "}
-              {}
+          <h1 className="homeTiltle">
+            <span className="homeTiltle__title1">{title} </span>
+            <span
+              style={{ color: "red", textDecoration: "underline" }}
+              className="homeTiltle__title2"
+            >
               {title_colored}
             </span>
-          </div>
+          </h1>
           <div>
             <NumbersSpeak allData={xdata} />
           </div>

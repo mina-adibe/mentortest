@@ -1,38 +1,38 @@
 * {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .homeTiltle {
-    font-size: 50px;
-    letter-spacing: -1px;
-    color: #254151;
-    text-align: center;
-    margin: 40px 40px;
+  font-size: 50px;
+  letter-spacing: -1px;
+  color: #254151;
+  text-align: center;
+  margin: 40px 40px;
 }
 
 .homeTiltle .homeTiltle__title1 {
-    color: #000000;
-    font-weight: 400;
-    font-family: "DejaVu ";
+  color: #000000;
+  font-weight: 400;
+  font-family: "DejaVu ";
 }
 
 .homeTiltle .homeTiltle__title2 {
-    color: #254151;
-    font-family: "Merriweather";
+  color: #254151;
+  font-family: "Merriweather";
 }
 
 .parentsection__divs {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
 }
 
-.parentsection .parentsection__divs>div:hover {
-    box-shadow: 0px 8px 25px -10px rgba(0, 0, 0, 0.25);
-    width: 25%;
+.parentsection .parentsection__divs > div:hover {
+  box-shadow: 0px 8px 25px -10px rgba(0, 0, 0, 0.25);
+  width: 25%;
 }
 
 /* .parentsection .parent :nth-of-type(1):hover {
@@ -51,32 +51,35 @@
 } */
 
 .container {
-    text-align: center;
-    width: 25%;
-    height: 100%;
-    padding: 70px 5px;
+  text-align: center;
+  width: 25%;
+  height: 100%;
+  padding: 70px 5px;
+  margin: 30px;
 }
 
 .container__numbers {
-    font-size: 100px;
-    line-height: 30px;
-    font-weight: 300;
-    font-family: "Merriweather";
-    text-align: center;
+  font-size: 100px;
+  line-height: 30px;
+  font-weight: 300;
+  font-family: "Merriweather";
+  text-align: center;
 }
 
 .title {
-    padding-top: 20px;
-    text-align: center;
-    color: #7d8589;
+  padding-top: 20px;
+  font-size: 1rem;
+  width: 40%;
+  margin: 20px auto;
+  color: #7d8589;
 }
 
 @media (max-width: 660px) {
-    .parentsection .parentsection__divs>div {
-        width: 100%;
-    }
+  .parentsection .parentsection__divs > div {
+    width: 100%;
+  }
 
-    .parentsection .parentsection__divs>div:hover {
-        width: 80%;
-    }
+  .parentsection .parentsection__divs > div:hover {
+    width: 30%;
+  }
 }
