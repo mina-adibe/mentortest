@@ -1,0 +1,223 @@
+:root {
+  --main-bg-color: #2a333b;
+  --secondry-color: #1e272e;
+  --third-color: #707070;
+  --main-font-color: #ffffff;
+}
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: var(--secondry-color);
+  background-color: var(--main-font-color);
+  border: 1px solid var(--third-color);
+  border-radius: 20px;
+  font-size: 48px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 90px;
+  background-color: var(--main-bg-color);
+}
+.section1,
+.section2,
+.section3,
+.section4,
+.section5 {
+  padding-left: 308px;
+  padding-right: 308px;
+  color: var(--main-font-color);
+}
+
+/* ***************___ begin of section 1 ___****************/
+.section1 {
+  background-color: var(--secondry-color);
+}
+
+.section1__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 151px;
+}
+
+.section1__left img {
+  width: 262px;
+  height: 262px;
+}
+.section1__right h2 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+}
+.section1__right p {
+  font-size: 36px;
+  line-height: 44px;
+}
+.section1__btn {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 140px;
+}
+.section1 .button {
+  margin-left: auto;
+}
+/* ***************___ begin of section 2 ___****************/
+
+.section2 {
+  background-color: var(--main-bg-color);
+}
+
+.section2__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  padding-top: 76px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.section2 h2 {
+  text-align: center;
+  padding-top: 136px;
+  font-size: 31px;
+  font-weight: 600;
+}
+.section2 p {
+  font-size: 32px;
+  padding-top: 20px;
+  padding-bottom: 96px;
+}
+
+.section2__container img {
+  height: 185px;
+}
+/* ***************___ begin of section 3 ___****************/
+
+.section3 {
+  background-color: var(--secondry-color);
+}
+.section3 img {
+  width: 244px;
+  height: 292px;
+}
+
+.section3 h2 {
+  font-size: 32px;
+  padding-bottom: 43px;
+}
+.section3 p {
+  font-size: 22px;
+  line-height: 44px;
+}
+.section3__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 151px;
+  padding-left: 40px;
+  padding-bottom: 164px;
+  padding-right: 20px;
+}
+/* ***************___ begin of section 4 ___****************/
+
+.section4 {
+  background-color: var(--main-bg-color);
+}
+.section4 img {
+  width: 192px;
+  height: 303px;
+}
+.section4 h2 {
+  font-size: 32px;
+  padding-bottom: 43px;
+}
+.section4 p {
+  font-size: 24px;
+  line-height: 44px;
+  max-width: 965px;
+}
+.section4__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 151px;
+  align-items: center;
+  padding-top: 151px;
+  padding-left: 20px;
+  padding-bottom: 164px;
+  padding-right: 40px;
+}
+/* ***************___ begin of section 5 ___****************/
+
+.section5 {
+  background-color: var(--secondry-color);
+}
+.section5__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 151px;
+  text-align: center;
+}
+.section5 h2 {
+  font-size: 31px;
+  margin-bottom: 35px;
+}
+.section5 p {
+  font-size: 24px;
+  margin-bottom: 76px;
+}
+.section5__btn {
+  margin-bottom: 138px;
+}
+/* ***************___ begin of footer ___****************/
+
+.footer {
+  background-color: var(--main-bg-color);
+  color: var(--main-font-color);
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 18%;
+  padding-right: 18%;
+  padding-top: 128px;
+  padding-bottom: 185px;
+}
+
+.footer__rightsec {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__rightsec p {
+  padding-bottom: 23px;
+}
+.footer__head {
+  font-size: 16px;
+  padding-bottom: 36px;
+}
+.footer__col2 {
+  margin-left: 72px;
+}
+
+.footer__col3 {
+  margin-left: 62px;
+}

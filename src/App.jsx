@@ -1,56 +1,12 @@
-import React, { Component } from "react";
-import "./App.css";
-import axios from "axios";
-import NumbersSpeak from "./components/NumbersSpeak";
+import React from "react";
+import Landingpage from "./components/Landingpage/Landingpage";
 
-export class App extends Component {
-  state = {
-    data: "",
-    isLoading: true,
-  };
-
-  componentDidMount() {
-    this.setState({ isLoading: true });
-    axios
-      .get(`https://run.mocky.io/v3/83b0bf2a-be40-4ffc-9d27-4aeaade24900`)
-      .then((res) => {
-        let data = res.data;
-        this.setState({ data, isLoading: false });
-      });
-  }
-
-  render() {
-    let isLoading = this.state.isLoading;
-    if (isLoading) {
-      return <p>Loading ...</p>;
-    }
-    const { id, title, title_colored, ...numbersdata } = this.state.data;
-    let xdata = numbersdata.speaking_numbers;
-    if (this.state.data) {
-      return (
-        <section>
-          <h1 className="homeTiltle">
-            <span className="homeTiltle__title1">{title} </span>
-            <span
-              style={{
-                color: "#d55342",
-                textDecoration: "underline",
-                fontWeight: "lighter	",
-              }}
-              className="homeTiltle__title2"
-            >
-              {title_colored}
-            </span>
-          </h1>
-          <div>
-            <NumbersSpeak allData={xdata} />
-          </div>
-        </section>
-      );
-    } else {
-      return "generic error";
-    }
-  }
-}
+const App = () => {
+  return (
+    <div>
+      <Landingpage />
+    </div>
+  );
+};
 
 export default App;
