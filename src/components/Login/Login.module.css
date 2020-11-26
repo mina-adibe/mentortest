@@ -1,0 +1,115 @@
+:root {
+  --main-bg-color: #2a333b;
+  --secondry-color: #1e272e;
+  --third-color: #707070;
+  --main-font-color: #ffffff;
+  --btn-bg-color: #6ec1f5;
+}
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--secondry-color);
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--main-font-color);
+  font-size: 25px;
+  padding-bottom: 51px;
+}
+.navbar img {
+  margin-right: 20px;
+}
+.container {
+  padding-top: 69px;
+  padding-left: 122px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "col1 col2";
+}
+.col1 {
+  grid-area: col1;
+}
+.col2 {
+  grid-area: col2;
+}
+
+.col1 h2 {
+  font-size: 32px;
+  color: var(--main-font-color);
+  padding-bottom: 10px;
+}
+.col1 p {
+  font-size: 24px;
+  color: var(--main-font-color);
+  padding-bottom: 50px;
+}
+
+.col1 label {
+  color: var(--main-font-color);
+  font-size: 18px;
+}
+
+.col1 input {
+  margin-top: 10px;
+  color: var(--main-font-color);
+  font-weight: 600;
+  font-size: 16px;
+  background-color: var(--main-bg-color);
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  outline: none;
+  border: none;
+  width: 414px;
+  height: 45px;
+  margin-bottom: 20px;
+}
+
+.col1 button {
+  background-color: var(--btn-bg-color);
+  padding-top: 15px;
+  padding-bottom: 14px;
+  padding-left: 65px;
+  padding-right: 65px;
+  color: var(--secondry-color);
+  border: 1px solid var(--third-color);
+  border-radius: 20px;
+  font-size: 21px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 21px;
+}
+
+.col2 img {
+  width: 570px;
+}
+
+.bg__clippath {
+  height: 100vh;
+  width: 30vw;
+  background-color: #2a333b;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -100;
+}
+.bg__clippath__sec {
+  background-color: #1e272e;
+  clip-path: circle(100% at 0 0);
+  height: 63vh;
+  right: 0px;
+  position: relative;
+}
